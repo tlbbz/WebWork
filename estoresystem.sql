@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50636
 File Encoding         : 65001
 
-Date: 2018-07-03 19:55:20
+Date: 2018-07-03 23:49:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -99,9 +99,11 @@ CREATE TABLE `products` (
 -- ----------------------------
 INSERT INTO `products` VALUES ('05cbb6e2-7840-49a9-b1cc-bcf5256490dd', '你坏', '30', '文学类', '20', '/upload/15/14/add05165-8f70-496f-905c-cb68cc59dfbd.jpg', '如果你和众人不一样，那就不一样！百万级畅销书作者大冰2018作品，淬火重生的大女儿。用《你坏》向你说声：你好。');
 INSERT INTO `products` VALUES ('482b5255-741d-4466-8596-26b68db91dbb', 'spring攻略', '1800', '技术类', '95', '/upload/1/1/b06c62ec-d995-4440-bee4-46cd10aab132.jpg', '中国名牌');
-INSERT INTO `products` VALUES ('bfa6d99f-ad8e-4304-acde-7eed55520b5f', 'java网络编程', '99', '技术类', '199', '/upload/13/2/99bf3e43-7717-4cbc-8c57-69a4e78a272d.jpg', 'java神书');
-INSERT INTO `products` VALUES ('fbdb8f38-c2f1-4025-a562-544cc83ad1be', '手镯', '1200', '服装衣帽', '100', '/upload/5/1/aa4c1502-4488-46a2-9864-33253f7c16d4.jpg', 'lkadjsflkajklsadkfjlkdslfjlkksfj');
-INSERT INTO `products` VALUES ('fca76bb3-73f3-456b-8a9d-6607cd4a09a1', '包包', '190', '服装衣帽', '2', '/upload/6/10/86e89ca5-6470-4318-b305-aa62eeb977a9.jpg', '生活必备');
+INSERT INTO `products` VALUES ('b9a9ce73-52a0-40c4-b424-2805d62217d4', '观山海', '78', '传统文化', '20', '/upload/0/7/200bd10f-5255-46d4-a0e9-5eb885ff5071.jpg', '山海经');
+INSERT INTO `products` VALUES ('bfa6d99f-ad8e-4304-acde-7eed55520b5f', 'java编程', '99', '技术类', '199', '/upload/13/2/99bf3e43-7717-4cbc-8c57-69a4e78a272d.jpg', 'java神书');
+INSERT INTO `products` VALUES ('c0708052-3f6f-4aab-9cc0-9d114ec5ad74', 'java与模式', '78', '传统文化', '20', '/upload/14/0/60edeea3-d3c4-4fbb-b393-6aacb312b084.jpg', '本书适合于Java程序员、架构设计师及设计模式爱好者，是一本实用的设计原则和设计模式的自学教材和使用手册。');
+INSERT INTO `products` VALUES ('fbdb8f38-c2f1-4025-a562-544cc83ad1be', 'Javaweb', '1200', '技术类', '100', '/upload/5/1/aa4c1502-4488-46a2-9864-33253f7c16d4.jpg', 'Javaweb开发与详解');
+INSERT INTO `products` VALUES ('fca76bb3-73f3-456b-8a9d-6607cd4a09a1', 'Junit', '190', '技术类', '2', '/upload/6/10/86e89ca5-6470-4318-b305-aa62eeb977a9.jpg', 'Junit实战');
 
 -- ----------------------------
 -- Table structure for role
@@ -158,7 +160,7 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   KEY `role` (`role`),
   CONSTRAINT `users_ibfk_1` FOREIGN KEY (`role`) REFERENCES `role` (`role`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of users
@@ -168,3 +170,4 @@ INSERT INTO `users` VALUES ('2', 'tom', '202cb962ac59075b964b07152d234b70', '小
 INSERT INTO `users` VALUES ('4', '李四', '81dc9bdb52d04dc20036dbd8313ed055', '小李', '22597927@qq.com', 'user', '1', 'b3ccad7d-ac17-4a05-be2d-0a5bd026c6ff', '2014-09-28 18:54:57');
 INSERT INTO `users` VALUES ('5', '王五', '81dc9bdb52d04dc20036dbd8313ed055', '小五', '22597927@qq.com', 'user', '1', 'c4328ef9-bd51-45a0-863a-9301fc4e2b8b', '2014-09-28 20:03:32');
 INSERT INTO `users` VALUES ('6', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '????', '1418497714@qq.com', 'user', '0', '1c8bf361-e7db-41f2-8c16-546e5702953a', '2018-07-03 17:22:27');
+INSERT INTO `users` VALUES ('7', 'admin', 'e10adc3949ba59abbe56e057f20f883e', '????', '1418497714@qq.com', 'user', '0', '5ea01362-890a-4ab7-b78d-32ae1b0264e7', '2018-07-03 20:43:25');
